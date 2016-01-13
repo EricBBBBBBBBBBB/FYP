@@ -1,0 +1,239 @@
+/* 
+ * Clearfix
+ * Genral
+ * Top Navigation
+ * Buttons
+ * Icons
+*/
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* Genral */
+body {
+	background: #F8F8F8;
+	color: #888;
+	font-weight: 300;
+	font-family: Calibri, Arial, sans-serif;
+}
+
+a {
+	font-family: Calibri, Arial, sans-serif;
+	text-decoration: none;
+	color: #888;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+	outline: none;
+}
+
+.LC-header,
+.LC-top,
+.LC-footer {
+	font-family: Arial, sans-serif;
+}
+
+.LC-header {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2em 0em 1em 0em;
+	text-align: left;
+}
+
+.LC-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.625em;
+	line-height: 1.3;
+}
+
+.LC-header span {
+	display: block;
+	padding: 0 0 0.6em 0.1em;
+	font-size: 60%;
+	opacity: 0.7;
+}
+
+
+/* Top Navigation Style */
+.LC-top {
+	width: 100%;
+	background: #ffffff;
+	text-transform: uppercase;
+	font-size: 0.69em;
+	border-bottom:1px #e5e5e5 solid;
+	line-height: 2.2;
+	position:fixed;
+}
+
+.LC-top a {
+	display: inline-block;
+	padding: 0 1em;
+	color: #888;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+}
+
+.LC-top a:hover {
+	background: rgba(250,250,250,0.95);
+	color: #333;
+}
+
+.LC-top span.right {
+	float: right;
+}
+
+.LC-top span.right a {
+	display: block;
+	float: left;
+}
+
+/* Buttons Style */
+.LC-buttons {
+	padding-top: 1em;
+	font-size: 1.1em;
+}
+
+.LC-buttons a {
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0.5em 0.5em 0.5em 1.9em;
+	padding: 1em 1.1em;
+	width: 280px;
+	outline: none;
+	color: #fff;
+	background: #336ca6;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.LC-buttons a:hover,
+.LC-buttons a.current-LC,
+.LC-buttons a.current-LC:hover {
+	opacity: 0.6;
+}
+
+.LC-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0em 1em 1em 0em;
+}
+
+.LC-content-second {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0em 1em 1em 0em;	
+}
+
+.LC-sidebar{
+	width: 25%;
+	float: left;
+	padding: 0em 1em 0em 0em;
+}
+.sidebar-box{
+	background:#ffffff;
+	border:1px #e5e5e5 solid;
+	border-bottom:1px #e5e5e5 solid;
+	padding: 0.5em 1em 1em 1em;
+	margin-bottom: 1em;	
+}
+
+.sidebar-box:last-child{
+	margin-bottom: 0em;	
+}
+
+.LC-article {
+	width: 75%;
+	float: left;
+	padding: 0em 1em 0em 0em;
+	margin-bottom: 1em;
+	
+	background:#ffffff;
+	border:1px #e5e5e5 solid;
+
+	
+}
+
+.LC-article p {
+	margin: 0;
+	padding: 0 1em 0.6em;
+	font-size: 1.8em;
+	line-height: 1.5;
+}
+
+.LC-content-second .LC-article{
+	width: 30%;
+}
+
+.LC-footer {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.5);
+	font-size: 0.69em;
+	border-top:1px #e5e5e5 solid;
+	line-height: 2.2;
+}
+
+
+/* Icons Style */
+
+li.fa {
+    margin-right: 5px;
+	width:100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 69em) {
+	.LC-header, 
+	.LC-sidebar, 
+	.LC-article, 
+	.sidebar-box,
+	.LC-content, 
+	.LC-content-second, 
+	.LC-content-second .LC-article {
+		float: none;
+		width: 100%;
+		padding: 1em 0.2em;
+	}
+	
+	.LC-top {
+		position: static;
+		font-size: 1.5em;
+	}
+	
+	.LC-top span.right {
+		float:left;
+	}
+		
+	.LC-top span.right a {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 25em) {
+
+	body {
+		font-size: 80%;
+	}
+
+	.LC-icon span {
+		display: none;
+	}
+
+}
+
+
